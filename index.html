@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Pilot</title>
+</head>
+
+<body>
+  <!-- sidebar -->
+  <input type="checkbox" id="input" />
+  <label for="input" class="overlay"></label>
+  <div class="sidebar">
+    <div class="logo">
+      <img src="icons/logo.svg" />
+    </div>
+    <div class="logo_mobile">
+      <img src="icons/logo_mobile.svg" />
+    </div>
+    <a class="active" href="#dashboard"><img src="icons/home.svg" />Dashboard</a>
+    <a href="#medwerkers"><img src="icons/forum_dashboard.svg" />Medewerkers</a>
+    <a href="#telefoonnummers"><img src="icons/contact.svg" />Telefoonnummers</a>
+    <a href="#bedrijfsfuncties"><img src="icons/store.svg" />Bedrijfsfuncties</a>
+    <hr />
+    <div class="help">
+      <a href="#Help"><img src="icons/status.svg" />Help</a>
+    </div>
+
+    <div class="profile_mobile">
+      <div id="search">
+        <a href="#search"><img src="icons/search.svg" />Search</a>
+      </div>
+      <div class="account">
+        <div>
+          <a href="#account"><img src="icons/profile.svg" id="account" /> Account</a>
+        </div>
+
+      </div>
+      <a href="#Help"><img src="icons/status.svg" id="help" />Help</a>
+      <div>
+        <a href="#logout"><img src="icons/signout.svg" />Uitloggen</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- header -->
+  <div id="content">
+    <div class="header">
+      <h1>Dashboard</h1>
+      <div class="logo_mobile">
+        <img src="./icons/logo_mobile.svg" alt="logo_mobile" />
+      </div>
+      <div class="profile">
+        <div class="search_icon">
+          <a href="#search"><img src="icons/search.svg" /></a>
+        </div>
+        <div class="account">
+          <div>
+            <a href="#account"><img src="icons/profile.svg" /> </a>
+          </div>
+          <div>
+            <select name="account">
+              <option value="">Account</option>
+            </select>
+          </div>
+        </div>
+        <div class="logout">
+          <a href="#logout"><img src="icons/signout.svg" /></a>
+        </div>
+      </div>
+      <!-- dashboard mobile -->
+      <div class="dashboard_mobile">
+        <div>
+          <img src="./icons/search_mobile.svg" />
+        </div>
+        <div class="vertical"></div>
+        <div id="menu">
+          <label for="input">
+            <img src="./icons/menu.svg" alt=""/>
+            <p>menu</p>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="main">
+      <div id="blockA">
+        <div class="title_section">
+          <p id="snel">Snel beheren</p>
+        </div>
+          <!-- buttons -->
+        <div class="buttons">
+          <a href="#mijnbelgroepen" class="button">
+            <img src="./icons/refresh.svg" />Mijn belgroepen</a>
+          <a href="#bekijkmedewerkers" class="button">
+            <img src="./icons/forum.svg" />Bekijk medewerkers</a>
+          <a href="#mijntelefoonnummers" class="button">
+            <img src="./icons/fixedphone.svg" />Mijn telefoonnummers</a>
+          <a href="#bekijkrecentegesprekken" class="button">
+            <img src="./icons/clock.svg" />Bekijk recente gesprekken</a>
+        </div>
+      </div>
+
+      <!-- callout boxes -->
+      <div class="blockB">
+        <h1 id="dashboard">Dashboard</h1>
+        <div class="title_section">
+          <p id="open">Openstaande taken</p>
+        </div>
+        <div class="callout">
+          <section class="section">
+            <div class="warning">
+              <img src="./icons/warning.svg" alt="warning" />
+              <p class="subtitle_section">Medewerkers activeren</p>
+            </div>
+            <div class="body_section">
+              <p class="body_text">Je moet nog 2 medewerkers activeren</p>
+              <a href="#doeditsnel" class="link_text">Doe dit snel</a>
+            </div>
+          </section>
+          <section class="section">
+            <div class="warning">
+              <img src="./icons/warning.svg" alt="warning" />
+              <p class="subtitle_section">
+                Openstaande nummerbehoud verzoekenn
+              </p>
+            </div>
+            <div class="body_section">
+              <p class="body_text">Er zijn 5 openstaande verzoeken</p>
+              <a href="#bekijkdestatus" class="link_text">Bekijk de status</a>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- cards -->
+      <div class="blockC">
+        <div class="title_section">
+          <p id="jouw">Jouw statistieken</p>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="avatar">
+              <img src="icons/forum_dashboard.svg" alt="incoming call" />
+            </div>
+            <div class="card">
+              <h3>8</h3>
+              <p class="body_text">actieve medewerkers</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="avatar">
+              <img src="icons/contact.svg" alt="incoming call" />
+            </div>
+            <div class="card">
+              <h3>12</h3>
+              <p id="normal_text" class="body_text">telefoonnummers</p>
+              <p id="hyphenate" class="body_text">telefoon-nummers</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="avatar">
+              <img src="icons/incomingcall.svg" alt="incoming call" />
+            </div>
+            <div class="card">
+              <h3>63</h3>
+              <p class="body_text">recente gesprekken</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
